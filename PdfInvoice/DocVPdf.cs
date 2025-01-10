@@ -134,7 +134,7 @@ namespace PdfInvoice
                 r.AutoItem().Width(332).AlignMiddle().AlignLeft().PaddingRight(20).Column(c =>
                 {
                     c.Item().Text(docV.Message);
-                    c.Item().AlignCenter().PaddingTop(4).Text(docV.Sig);
+                    c.Item().AlignCenter().PaddingTop(4).Text(docV.Sig != null ? docV.Sig : "");
                 });
                 r.AutoItem().Width(200).AlignRight().Table(t =>
                 {

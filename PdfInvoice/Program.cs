@@ -11,9 +11,9 @@ class Program
     {
         BitMiracle.Docotic.LicenseManager.AddLicenseData(@"<add license>");
 
-        string docNum = "CV176417";
+        string docNum = "CV0658AC";
         bool withZeros = false;
-        string pdfPath = @"C:\Users\Public\Downloads\CV176417.pdf";
+        string pdfPath = @"C:\Users\Public\Downloads\" + docNum + ".pdf";
 
         using var http = new HttpClient();
 
